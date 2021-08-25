@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "940959580314",
+    "project_id": "freshmart2-facff",
+    "storage_bucket": "freshmart2-facff.appspot.com",
+    "firebase url": "https://freshmart2-facff-default-rtdb.firebaseio.com/"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:940959580314:android:a92531302c4c4bed491f23",
+        "android_client_info": {
+          "package_name": "com.blogspot.sarthak.freshmart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "940959580314-ddgkqnba1d44m9288lld3daq3qv7cul9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCCsjfFv7I4ZnLRezrT-5ToodUnDvIZKh0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "940959580314-ddgkqnba1d44m9288lld3daq3qv7cul9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.blogspot.atifsoftwares.grocery"
+    android:installLocation="auto">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@id/icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar"
+        android:usesCleartextTraffic="true">
+        <activity android:name="com.blogspot.sarthak.freshmart.activities.VerifyEmail"></activity>
+        <activity android:name="com.blogspot.sarthak.freshmart.activities.AddPromotionCodeActivity" />
+        <activity android:name="com.blogspot.sarthak.freshmart.activities.SwitchPurchaseActivity" />
+        <activity android:name="com.blogspot.sarthak.freshmart.activities.PromotionCodesActivity" />
+        <activity android:name="com.blogspot.sarthak.freshmart.activities.SettingsActivity" />
+        <activity android:name="com.blogspot.sarthak.freshmart.activities.OrderDetailsSellerActivity" />
+        <activity android:name="com.blogspot.sarthak.freshmart.activities.ShopReviewsActivity" />
+        <activity android:name="com.blogspot.sarthak.freshmart.activities.WriteReviewActivity" />
+        <activity android:name="com.blogspot.sarthak.freshmart.activities.OrderDetailsUsersActivity" />
+        <activity android:name="com.blogspot.sarthak.freshmart.activities.EditProductActivity" />
+        <activity android:name="com.blogspot.sarthak.freshmart.activities.AddProductActivity" />
+        <activity android:name="com.blogspot.sarthak.freshmart.activities.ProfileEditSellerActivity" />
+        <activity android:name="com.blogspot.sarthak.freshmart.activities.ProfileEditUserActivity" />
+        <activity android:name="com.blogspot.sarthak.freshmart.activities.MainUserActivity" />
+        <activity android:name="com.blogspot.sarthak.freshmart.activities.MainSellerActivity" />
+        <activity android:name="com.blogspot.sarthak.freshmart.activities.ForgotPasswordActivity" />
+        <activity android:name="com.blogspot.sarthak.freshmart.activities.RegisterUserActivity" />
+        <activity android:name="com.blogspot.sarthak.freshmart.activities.RegisterSellerActivity" />
+        <activity android:name="com.blogspot.sarthak.freshmart.activities.LoginActivity" />
+        <activity android:name="com.blogspot.sarthak.freshmart.activities.MainWholesalerActivity" />
+        <activity
+            android:name="com.blogspot.sarthak.freshmart.activities.ShopDetailsActivity"
+            android:windowSoftInputMode="stateHidden" /> <!-- hide keyboard by default -->
+        <activity android:name="com.blogspot.sarthak.freshmart.activities.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+
+        <service android:name="com.blogspot.sarthak.freshmart.MyFirebaseMessaging">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

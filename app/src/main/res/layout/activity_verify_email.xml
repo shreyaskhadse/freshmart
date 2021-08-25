@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.blogspot.sarthak.freshmart.activities.VerifyEmail">
+
+    <RelativeLayout
+        android:id="@+id/TopBar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:padding="10dp"
+        android:background="@drawable/shape_rect01">
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_back_white"
+            android:background="@null"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Verify Your Email"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/colorWhite"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iconIv"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/shape_circle01"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/ic_key_white"
+        android:padding="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/iconIv"
+        android:id="@+id/layout_verificationemail"
+        android:layout_marginBottom="10dp"
+        >
+        <EditText
+            android:id="@+id/editTextVerifyEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:ems="10"
+            android:layout_below="@+id/textView_msg"
+            android:layout_weight="0.7"
+            android:background="@drawable/shapre_rect02"
+            android:inputType="textEmailAddress"
+            />
+
+        <Button
+            android:id="@+id/button_verify_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="VERIFY"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_below="@+id/editTextVerifyEmail"
+            android:layout_weight="0"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_verify_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:text="CONFIRM YOUR VERIFICATION"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_below="@+id/layout_verificationemail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/textView_verification_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email Not Verified"
+        android:textColor="#FF0000"
+        android:layout_below="@id/button_verify_confirm"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:padding="20dp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <Button
+        android:id="@+id/button_proceed_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:text="PROCEED"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_below="@+id/textView_verification_status"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        />
+
+</RelativeLayout>
